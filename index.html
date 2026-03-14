@@ -32,11 +32,8 @@ background:linear-gradient(45deg,#8b0000,#D4AF37);
 -webkit-text-fill-color:transparent;
 }
 
-/* GOLD */
-
-.gold{
-color:#D4AF37;
-}
+.gold{color:#D4AF37;}
+.red{color:#8b0000;}
 
 /* LANDING */
 
@@ -144,6 +141,10 @@ transform:translateY(30px);
 transition:1.5s;
 }
 
+.events-section{
+padding:15px 20px;
+}
+
 .section.show{
 opacity:1;
 transform:translateY(0);
@@ -228,8 +229,62 @@ animation:sparkle 3s linear infinite;
 100%{transform:translateY(100vh);opacity:0}
 }
 
-</style>
+/* FINAL RED SECTION */
 
+.final-section{
+background:linear-gradient(135deg,#8b0000,#b21d16,#8b0000);
+color:white;
+padding:120px 20px;
+text-align:center;
+}
+
+.final-title{
+font-family:'Great Vibes',cursive;
+font-size:clamp(70px,8vw,100px);
+background:linear-gradient(45deg,#D4AF37,#fff3c0,#8b0000);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin:20px 0;
+}
+
+.final-hindi{
+font-family:'Yatra One',cursive;
+color:#f3d27a;
+font-size:28px;
+}
+
+.date-pill{
+display:inline-block;
+border:1px solid #D4AF37;
+padding:10px 28px;
+border-radius:30px;
+margin:25px 0;
+color:#D4AF37;
+letter-spacing:3px;
+}
+
+.venue-text{
+color:#f3d27a;
+font-size:14px;
+margin-top:8px;
+}
+
+.venue-btn{
+margin-top:25px;
+padding:12px 25px;
+border-radius:25px;
+border:1px solid #D4AF37;
+background:transparent;
+color:#D4AF37;
+cursor:pointer;
+}
+
+.venue-btn:hover{
+background:#D4AF37;
+color:#8b0000;
+}
+
+</style>
 </head>
 
 <body>
@@ -273,7 +328,7 @@ document.body.appendChild(s)
 <div class="btn-row">
 
 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#D4AF37" viewBox="0 0 16 16">
-<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2z"/>
+<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2z"/>
 </svg>
 
 <span class="btn-main">OPEN INVITATION</span>
@@ -292,25 +347,10 @@ document.body.appendChild(s)
 
 <div class="countdown">
 
-<div>
-<div class="time-box"><div id="days">00</div></div>
-<div class="time-label">Days</div>
-</div>
-
-<div>
-<div class="time-box"><div id="hours">00</div></div>
-<div class="time-label">Hours</div>
-</div>
-
-<div>
-<div class="time-box"><div id="mins">00</div></div>
-<div class="time-label">Mins</div>
-</div>
-
-<div>
-<div class="time-box"><div id="secs">00</div></div>
-<div class="time-label">Secs</div>
-</div>
+<div><div class="time-box"><div id="days">00</div></div><div class="time-label">Days</div></div>
+<div><div class="time-box"><div id="hours">00</div></div><div class="time-label">Hours</div></div>
+<div><div class="time-box"><div id="mins">00</div></div><div class="time-label">Mins</div></div>
+<div><div class="time-box"><div id="secs">00</div></div><div class="time-label">Secs</div></div>
 
 </div>
 
@@ -319,6 +359,10 @@ document.body.appendChild(s)
 <!-- INVITE PAGE -->
 
 <section id="invite">
+
+<!-- existing invite sections remain unchanged -->
+
+
 
 <div class="section">
 
@@ -380,6 +424,125 @@ SMT. CHANDA DEVI & LATE SHRI KAILASH CHAND MEENA
 </p>
 
 </div>
+
+<!-- GOLDEN MOMENTS / EVENTS SECTION -->
+
+<div class="section events-section">
+
+<!--<h3 class="gold hindi">|| श्री गणेशाय नमः ||</h3>-->
+
+<p class="red" style="max-width:600px;margin:auto">
+वक्रतुंड महाकाय सूर्यकोटि समप्रभः । <br>
+निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ॥
+</p>
+
+<br>
+
+<h2 class="red" style="font-family:'Great Vibes';font-size:65px">
+Events Scheduled
+</h2>
+
+</div>
+
+
+<div class="section events-section">
+
+<h3 class="gold">Thursday, 23rd April, 2026</h3>
+
+<p>Lagan .................................................. 8:15 a.m.</p>
+<p>Mehndi ............................................... 12:15 p.m.</p>
+<p>Tel ....................................................... 05:00 p.m.</p>
+
+</div>
+
+
+<div class="section events-section">
+
+<h3 class="gold">Friday, 24th April, 2026</h3>
+
+<p>Chaak ................................................. 10:00 a.m.</p>
+<p>Manda ................................................ 12:00 p.m.</p>
+<p>Bhaat .................................................. 08:00 p.m.</p>
+
+</div>
+
+
+<div class="section events-section">
+
+<h3 class="gold">Saturday, 25th April, 2026</h3>
+
+<p>Welcome of Barat ................................ 7:15 p.m.</p>
+
+</div>
+
+
+<div class="section events-section">
+
+<h3 class="gold">Sunday, 26th April, 2026</h3>
+
+<p>Vidai .................................................... 7:00 a.m.</p>
+
+</div>
+
+
+
+<!-- VENUE -->
+
+<div class="section">
+
+<h3 class="gold">Venue</h3>
+
+<h2 style="font-family:'Great Vibes';font-size:42px;color:#8b0000">
+Sanjog Marriage Garden
+</h2>
+
+<p class="gold">
+Jaipur Road, Alwar, Rajasthan
+</p>
+
+</div>
+
+
+
+
+<!-- FINAL RED CELEBRATION SECTION -->
+
+<section class="final-section">
+
+<div style="color:#D4AF37;font-size:40px">ॐ</div>
+
+<h3 style="font-family:'Great Vibes';font-size:30px">
+We can't wait to celebrate with you!
+</h3>
+
+<p class="final-hindi">
+आपकी उपस्थिति की प्रतीक्षा में
+</p>
+
+<div style="margin:20px;color:#D4AF37">♥</div>
+
+<div class="final-title">
+Rachna & Sumeet
+</div>
+
+<div class="final-hindi">
+रचना एवं सुमीत
+</div>
+
+<div class="date-pill">
+25th APRIL 2026
+</div>
+
+<div class="venue-text">
+Sanjog Marriage Garden<br>
+Jaipur Road, Alwar, Rajasthan
+</div>
+
+<a href="https://maps.app.goo.gl/2f61ruQe2okv8tvq7" target="_blank" style="text-decoration:none;">
+<button class="venue-btn">
+📍 VIEW VENUE
+</button>
+</a>
 
 </section>
 
